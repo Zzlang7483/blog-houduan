@@ -1,2 +1,4 @@
-package com.blog.vo;public class CategoryVo {
+package com.blog.vo;
+
+public class CategoryVo {
 }

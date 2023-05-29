@@ -1,2 +1,13 @@
-package com.blog.vo;public class TagVo {
+package com.blog.vo;
+
+import lombok.Data;
+
+@Data
+public class TagVo {
+    private String id;
+
+    private String tagName;
+
+    private String avatar;
+
 }

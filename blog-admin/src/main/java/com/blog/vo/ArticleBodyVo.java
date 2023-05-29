@@ -1,2 +1,4 @@
-package com.blog.vo;public class ArticleBodyVo {
+package com.blog.vo;
+
+public class ArticleBodyVo {
 }
