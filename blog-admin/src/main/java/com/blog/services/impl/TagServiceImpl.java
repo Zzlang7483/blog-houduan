@@ -45,12 +45,9 @@ public class TagServiceImpl implements TagService {
         if(CollectionUtils.isEmpty(ids)){
             return Collections.EMPTY_LIST;
         }
+        List<Tag> tagsByTagIds = tagMapper.findTagsByTagIds(ids);
 
-        tagMapper.findTagsByTagIds(ids);
-
-        return null;
+        return copyList(tagsByTagIds);
     }
-
-
 }
 

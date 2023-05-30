@@ -12,5 +12,4 @@ public interface TagService {
 
     List<TagVo> hot(Integer limit);
 
-
 }

@@ -1,7 +1,9 @@
 package com.blog.services.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.blog.dao.Archives;
 import com.blog.dao.Article;
 import com.blog.dao.SysUser;
 import com.blog.mapper.ArticleMapper;
@@ -9,6 +11,7 @@ import com.blog.services.ArticleService;
 import com.blog.services.SysUserService;
 import com.blog.services.TagService;
 import com.blog.vo.ArticleVo;
+import com.blog.vo.Result;
 import com.blog.vo.TagVo;
 import com.blog.vo.params.PageParams;
 import org.joda.time.DateTime;
@@ -37,6 +40,25 @@ public class ArticleServiceImpl implements ArticleService {
         return articleVoList;
     }
 
+    @Override
+    public Result hotArticle(int limit) {
+        List<Article> articles = articleMapper.hotArticles(limit);
+        List<ArticleVo> articleVos = copyList(articles,false,false);
+        return Result.success(articleVos);
+    }
+
+    @Override
+    public Result newArticle(int limit) {
+        List<Article> articles = articleMapper.newArticle(limit);
+        List<ArticleVo> articleVos = copyList(articles,false,false);
+        return Result.success(articleVos);
+    }
+
+    @Override
+    public Result listArchives() {
+        List<Archives> archives = articleMapper.listArchives();
+        return Result.success(archives);
+    }
 
 
     public ArticleVo copy(Article article,Boolean isAuthor , Boolean isBody , Boolean isTags){
@@ -60,6 +82,13 @@ public class ArticleServiceImpl implements ArticleService {
             articleVos.add(copy(article,isAuthor,isBody,isTags));
         }
         return articleVos;
+    }
+    private List<ArticleVo> copyList(List<Article> articles, boolean isTag, boolean isAuthor) {
+        List<ArticleVo> articleVoList = new ArrayList<>();
+        for (Article record : articles) {
+            articleVoList.add(copy(record,isTag,isAuthor,false));
+        }
+        return articleVoList;
     }
 
 }

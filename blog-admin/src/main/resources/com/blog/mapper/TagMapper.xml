@@ -14,15 +14,19 @@
         </where>
     </select>
 
-    <select id="findHotsTagIds" parameterMap="int" resultMap="long">
+    <select id="findHotsTagIds" parameterType="int" resultType="java.lang.Long">
         select tag_id from ms_article_tag at group by tag_id order by count(1) desc limit #{size}
     </select>
 
-    <select id="findTagsByTagIds" parameterMap="list" resultMap="com.blog.dao.Tag">
+    <select id="findTagsByTagIds" parameterType="list" resultType= "com.blog.dao.Tag">
         select  tag_name as tagName from ms_tag
         where  id in
         <foreach collection="tagIds" item="tagId" separator="," open="(" close=")">
             #{tagId}
         </foreach>
     </select>
+
+
+
+
 </mapper>
