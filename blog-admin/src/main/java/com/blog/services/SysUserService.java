@@ -7,10 +7,13 @@ import org.springframework.stereotype.Service;
 
 public interface SysUserService {
 
-
     SysUser findUserById(Long userId);
 
     SysUser findUser(String account , String pwd);
 
     Result getUserInfoByToken(String token);
+
+    SysUser findUserByAccount(String account);
+
+    void save(SysUser sysUser);
 }

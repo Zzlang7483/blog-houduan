@@ -7,4 +7,7 @@ public interface LoginService {
 
     Result login(LoginParam loginParam);
 
+    public Result logout(String token);
+
+    public Result register(LoginParam loginParam);
 }

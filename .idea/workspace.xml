@@ -4,30 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83c7e2af-9fc4-4825-8c2b-c8debed9d7d1" name="Changes" comment="05/29">
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/dao/Archives.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/handler/AllExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/util/JWTUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/LoginParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/LoginUserVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/resources/com/blog/mapper/ArticleMapper.xml" afterDir="false" />
+    <list default="true" id="83c7e2af-9fc4-4825-8c2b-c8debed9d7d1" name="Changes" comment="登录，最新文章，文章归档">
+      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/LogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/handler/LoginInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/TagsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/TagsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/SysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/TagService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/LoginServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/TagServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/resources/com/blog/mapper/TagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/resources/com/blog/mapper/TagMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/LoginParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/LoginParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,30 +58,31 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;cn.yiiguxing.plugin.translate&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;d8af47b4e80fd36b061d3d76ce99f1d2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "spring.configuration.checksum": "d8af47b4e80fd36b061d3d76ce99f1d2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -150,7 +139,8 @@
       <updated>1685331551394</updated>
       <workItem from="1685331552629" duration="12722000" />
       <workItem from="1685348764067" duration="3921000" />
-      <workItem from="1685409241337" duration="16390000" />
+      <workItem from="1685409241337" duration="16743000" />
+      <workItem from="1685496375127" duration="4310000" />
     </task>
     <task id="LOCAL-00001" summary="05/29">
       <created>1685352975219</created>
@@ -159,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685352975219</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="登录，最新文章，文章归档">
+      <created>1685431404426</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685431404426</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +176,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="05/29" />
-    <option name="LAST_COMMIT_MESSAGE" value="05/29" />
+    <MESSAGE value="登录，最新文章，文章归档" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录，最新文章，文章归档" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
