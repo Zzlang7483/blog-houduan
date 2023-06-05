@@ -1,6 +1,7 @@
 package com.blog.services;
 
 import com.blog.dao.Tag;
+import com.blog.vo.Result;
 import com.blog.vo.TagVo;
 import org.springframework.stereotype.Service;
 
@@ -11,5 +12,11 @@ public interface TagService {
     List<TagVo> findTagsByArticleId(Long id);
 
     List<TagVo> hot(Integer limit);
+
+    Result findAll();
+
+    Result findAllDetail();
+
+    Result findDetailById(Long id);
 
 }

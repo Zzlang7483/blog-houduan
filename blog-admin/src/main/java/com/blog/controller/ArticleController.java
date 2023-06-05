@@ -3,6 +3,7 @@ package com.blog.controller;
 import com.blog.services.ArticleService;
 import com.blog.vo.ArticleVo;
 import com.blog.vo.Result;
+import com.blog.vo.params.ArticleParam;
 import com.blog.vo.params.PageParams;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,11 +18,19 @@ public class ArticleController {
     @Autowired
     private ArticleService articleService;
 
+
+    @PostMapping("/view/{id}")
+    public Result findArticleById(@PathVariable("id") long id){
+        ArticleVo articleVo = articleService.findArticleById(id);
+        return Result.success(articleVo);
+    }
     @PostMapping
     public Result articles(@RequestBody PageParams pageParams){
-        List<ArticleVo> articles = articleService.listArticlesPage(pageParams);
-        return Result.success(articles);
+
+        return articleService.listArticlesPage(pageParams);
     }
+
+
 
     @PostMapping("/hot")
     public Result hotArticle(){
@@ -40,4 +49,8 @@ public class ArticleController {
         return articleService.listArchives();
     }
 
+    @PostMapping("publish")
+    public Result publish(@RequestBody ArticleParam articleParam){
+        return articleService.publish(articleParam);
+    }
 }

@@ -10,6 +10,7 @@ import com.blog.vo.ErrorCode;
 import com.blog.vo.LoginParam;
 import com.blog.vo.LoginUserVo;
 import com.blog.vo.Result;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -21,6 +22,7 @@ import java.util.concurrent.TimeUnit;
 
 @Transactional
 @Service
+@Slf4j
 public class LoginServiceImpl implements LoginService {
 
     private static final String slat = "Zdz!@#";
@@ -33,6 +35,14 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public Result login(LoginParam loginParam) {
+        /**
+         * 1. 检查参数是否合法
+         * 2. 根据用户名和密码去user表中查询 是否存在
+         * 3. 如果不存在 登录失败
+         * 4. 如果存在 ，使用jwt 生成token 返回给前端
+         * 5. token放入redis当中，redis  token：user信息 设置过期时间
+         *  (登录认证的时候 先认证token字符串是否合法，去redis认证是否存在)
+         */
 
         String account = loginParam.getAccount();
         String password = loginParam.getPassword();
@@ -47,6 +57,8 @@ public class LoginServiceImpl implements LoginService {
         //登录成功，使用JWT生成token，返回token和redis中
         String token = JWTUtils.createToken(sysUser.getId());
         redisTemplate.opsForValue().set("TOKEN_"+token, JSON.toJSONString(sysUser),1, TimeUnit.DAYS);
+        log.info("报错信息："+token);
+
         return Result.success(token);
     }
 
@@ -54,6 +66,23 @@ public class LoginServiceImpl implements LoginService {
     public Result logout(String token) {
         redisTemplate.delete(token);
         return Result.success(null);
+    }
+
+    @Override
+    public SysUser checkToken(String token) {
+        if (org.apache.commons.lang3.StringUtils.isBlank(token)){
+            return null;
+        }
+        Map<String, Object> stringObjectMap = JWTUtils.checkToken(token);
+        if (stringObjectMap == null){
+            return null;
+        }
+        String userJson = redisTemplate.opsForValue().get("TOKEN_" + token);
+        if (org.apache.commons.lang3.StringUtils.isBlank(userJson)){
+            return null;
+        }
+        SysUser sysUser = JSON.parseObject(userJson, SysUser.class);
+        return sysUser;
     }
 
     @Override
