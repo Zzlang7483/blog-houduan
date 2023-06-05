@@ -1,5 +1,6 @@
 package com.blog.controller;
 
+import com.blog.common.aop.Cache;
 import com.blog.services.ArticleService;
 import com.blog.vo.ArticleVo;
 import com.blog.vo.Result;
@@ -27,12 +28,13 @@ public class ArticleController {
     @PostMapping
     public Result articles(@RequestBody PageParams pageParams){
 
-        return articleService.listArticlesPage(pageParams);
+        return articleService.listArticle(pageParams);
     }
 
 
 
     @PostMapping("/hot")
+    @Cache(expire = 5*6*1000,name = "hot_article")
     public Result hotArticle(){
         int limit = 4;
         return   articleService.hotArticle(limit);

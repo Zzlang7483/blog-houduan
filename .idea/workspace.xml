@@ -5,56 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83c7e2af-9fc4-4825-8c2b-c8debed9d7d1" name="Changes" comment="登出，注册">
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/common/aop/LogAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/common/aop/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/config/ThreadPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/CommentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/dao/ArticleBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/dao/ArticleTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/dao/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/dao/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/dao/CommentParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/ArticleBodyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/ArticleTagMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/CommentsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/ThreadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/CommentsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/util/HttpContextUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/util/IpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/util/QiniuUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/util/UserThreadLocal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/util/VariableName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/CommentVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/UserVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/params/ArticleBodyParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/params/ArticleParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/params/LoginParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/common/aop/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/common/aop/CacheAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/AdminApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/mapper/AdminMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/model/params/PageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/pojo/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/pojo/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/MySimpleGrantedAuthority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/SecurityUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/vo/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/vo/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/TagsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/TagsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/handler/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/handler/LoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/CommentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/ArticleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/SysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/TagService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/TagServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/ArticleBodyVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/ArticleBodyVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/ArticleVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/ArticleVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/CategoryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/CategoryVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/resources/com/blog/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/resources/com/blog/mapper/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -80,15 +56,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\dev\java\maven\apache-maven-3.6.3\apache-maven-3.6.3\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.3/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="E:\dev\java\maven\apache-maven-3.6.3\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="localRepository" value="F:\dev\tools\apache-maven-3.6.3\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../tools/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="F:\dev\tools\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="2QS0CiQJ6aXA8QPeb5e88JINoRr" />
@@ -98,31 +69,31 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "902fe8c371e2e8826c71158437c2bc15",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;902fe8c371e2e8826c71158437c2bc15&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -135,7 +106,7 @@
       <recent name="E:\dev\java\workSpace\blog-houduan\blog-admin\src\main\resources\com\dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BlogApp">
+  <component name="RunManager" selected="Application.SecurityConfig">
     <configuration name="ArticleServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.blog.services.impl.ArticleServiceImpl" />
       <module name="blog-admin" />
@@ -162,6 +133,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SecurityConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.blog.admin.config.SecurityConfig" />
+      <module name="blog-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blog.admin.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.blog.admin.AdminApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BlogApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="blog-admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.blog.BlogApp" />
@@ -177,6 +168,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SecurityConfig" />
         <item itemvalue="Spring Boot.BlogApp" />
         <item itemvalue="Application.QiniuUtils" />
         <item itemvalue="Application.ArticleServiceImpl" />
@@ -201,6 +193,7 @@
       <workItem from="1685685015870" duration="156000" />
       <workItem from="1685927299641" duration="15250000" />
       <workItem from="1685947315632" duration="2051000" />
+      <workItem from="1685969622808" duration="5728000" />
     </task>
     <task id="LOCAL-00001" summary="05/29">
       <created>1685352975219</created>

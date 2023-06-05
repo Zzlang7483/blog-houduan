@@ -2,6 +2,7 @@ package com.blog.services.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.blog.dao.*;
 import com.blog.dao.ArticleTag;
@@ -38,6 +39,18 @@ public class ArticleServiceImpl implements ArticleService {
     @Autowired
     private ThreadService threadService;
 
+    public Result listArticle(PageParams params){
+        Page<Article> page = new Page<>(params.getPage(),params.getPageSize());
+
+        IPage<Article> articleIPage = articleMapper.listArticle(page,
+                params.getCategoryId(),
+                params.getTagId(),
+                params.getYear(),
+                params.getMonth());
+        List<Article> records = articleIPage.getRecords();
+
+        return  Result.success(copyList(records,true,true));
+    }
     @Override
     public Result listArticlesPage(PageParams pageParams) {
         /**

@@ -1,6 +1,7 @@
 package com.blog.services;
 
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.blog.vo.ArticleVo;
 import com.blog.vo.Result;
 import com.blog.vo.params.ArticleParam;
@@ -24,5 +25,7 @@ public interface ArticleService {
     ArticleVo findArticleById(long id);
 
     Result publish(ArticleParam articleParam);
+
+    public Result listArticle(PageParams pageParams);
 }
 
