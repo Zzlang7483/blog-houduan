@@ -9,7 +9,9 @@ import com.blog.admin.pojo.Permission;
 import com.blog.admin.vo.PageResult;
 import com.blog.admin.vo.Result;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PermissionService {
     @Autowired
     private PermissionMapper permissionMapper;

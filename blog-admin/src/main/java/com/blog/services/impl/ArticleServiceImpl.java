@@ -22,6 +22,9 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * common
+ */
 @Service
 public class ArticleServiceImpl implements ArticleService {
     @Autowired

@@ -5,32 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83c7e2af-9fc4-4825-8c2b-c8debed9d7d1" name="Changes" comment="登出，注册">
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/common/aop/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/common/aop/CacheAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/AdminApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/mapper/AdminMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/mapper/PermissionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/model/params/PageParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/pojo/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/pojo/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/MySimpleGrantedAuthority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/PermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/SecurityUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/vo/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/vo/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-admin/src/test/java/com/blog/TestApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/mapper/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/common/aop/LogAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/common/aop/LogAnnotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/services/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/resources/com/blog/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/resources/com/blog/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/params/PageParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-admin/src/main/java/com/blog/vo/params/PageParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/mapper/AdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/mapper/PermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/mapper/PermissionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/src/main/java/com/blog/admin/service/PermissionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +89,13 @@
       <recent name="E:\dev\java\workSpace\blog-houduan\blog-admin\src\main\resources" />
       <recent name="E:\dev\java\workSpace\blog-houduan\blog-admin\src\main\resources\com\dao" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Application.SecurityConfig">
     <configuration name="ArticleServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
