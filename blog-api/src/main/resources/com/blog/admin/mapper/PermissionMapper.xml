@@ -4,7 +4,7 @@
 
 <mapper namespace="com.blog.admin.mapper.PermissionMapper">
 
-    <select id="findPermissionsByAdminId" parameterType="long" resultType="com.mszlu.blog.admin.pojo.Permission">
+    <select id="findPermissionsByAdminId" parameterType="long" resultType="com.blog.admin.pojo.Permission">
         select * from ms_permission where id in (select permission_id from ms_admin_permission where admin_id=#{adminId})
     </select>
 </mapper>
